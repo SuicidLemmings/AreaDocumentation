@@ -5,6 +5,7 @@
 
 
 ###Services
+
 > The **services** allow an user to have acces to several informations.
 >
 >There is actually two ways to get an access to these informations:
@@ -15,6 +16,7 @@
 > The **services** allow you to display the desired information thanks to the widgets.
 
 ### Widgets
+
 > The **widgets** are resizeable and drag-able windows. Their purpose of a widget is to display informations.
 >
 > You can decide the frequency of the data's update at the creation and at run time.
