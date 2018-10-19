@@ -47,9 +47,9 @@
 >> #### Events:
 >> Displays your lasts *n* events order in time from *"now"*.
 
->
-### Weather:
->The Weather service allows you to access basic information about the weather.
+
+> ### Weather:
+> The Weather service allows you to access basic information about the weather.
 >> #### Current weather:
 >> Displays the current weather from a selected city.
 >> Severals informations are displayed like the temperature, the wind speed, etc ...
