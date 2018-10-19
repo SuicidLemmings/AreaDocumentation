@@ -43,7 +43,6 @@
 > The outlook service allows you to access information of outlook thanks to two widgets.
 >> #### Mails:
 >> Displays your lasts *n* mails.
->>
 >> #### Events:
 >> Displays your lasts *n* events order in time from *"now"*.
 
@@ -51,8 +50,6 @@
 The Weather service allows you to access basic information about the weather.
 >> #### Current weather:
 >> Displays the current weather from a selected city.
->>
 >> Severals informations are displayed like the temperature, the wind speed, etc ...
->>
 >> #### Forecast weather:
 >> Displays the previsions of the weather for the next 5 days.
