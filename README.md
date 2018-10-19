@@ -1,10 +1,10 @@
 # Services and widgets
 
-----
+---
 ## Generalities
+---
 
-
-###Services
+### Services
 
 > The **services** allow an user to have acces to several informations.
 >
@@ -21,7 +21,7 @@
 >
 > You can decide the frequency of the data's update at the creation and at run time.
 
-###Common
+### Common
 
 > The services and the widgets are present on the left part of your windows.
 >
@@ -29,9 +29,7 @@
 ---
 [Google Dashboard example](https://myaccount.google.com/dashboard "Dashboard")
 
-----
 ## Informations
-
 ---
 > Our server can offer you three different services.
 
@@ -39,7 +37,7 @@
 * Weather
 * *Missing*
 
-> ###Outlook:
+> ### Outlook:
 > The outlook service allows you to access information of outlook thanks to two widgets.
 >> #### Mails:
 >> Displays your lasts *n* mails.
