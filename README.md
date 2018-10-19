@@ -39,15 +39,13 @@
 * Weather
 * *Missing*
 
->
-###Outlook:
+> ###Outlook:
 > The outlook service allows you to access information of outlook thanks to two widgets.
 >> #### Mails:
 >> Displays your lasts *n* mails.
 >> #### Events:
 >> Displays your lasts *n* events order in time from *"now"*.
-
-
+---
 > ### Weather:
 > The Weather service allows you to access basic information about the weather.
 >> #### Current weather:
