@@ -38,6 +38,7 @@
 * Outlook
 * Weather
 * *Missing*
+
 >
 ###Outlook:
 > The outlook service allows you to access information of outlook thanks to two widgets.
@@ -48,7 +49,7 @@
 
 >
 ### Weather:
-The Weather service allows you to access basic information about the weather.
+>The Weather service allows you to access basic information about the weather.
 >> #### Current weather:
 >> Displays the current weather from a selected city.
 >> Severals informations are displayed like the temperature, the wind speed, etc ...
