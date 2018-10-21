@@ -32,11 +32,13 @@
 ---
 ## Informations
 ---
-> Our server can offer you three different services.
+> Our server can offer you severals different services.
 
 * Outlook
 * Weather
-* *Missing*
+* Gouv
+* Movie
+
 
 > ### Outlook:
 > The outlook service allows you to access information of outlook thanks to two widgets.
@@ -51,3 +53,21 @@
 >> Severals informations are displayed like the temperature, the wind speed, etc ...
 >> #### Forecast weather:
 >> Displays the previsions of the weather for the next 5 days.
+> ### Gouv:
+> The gouv service allows you to access information of gouv like organismes.
+>> #### Gouv Address:
+>> Displays all the adresses find for the given *address*.
+>> #### Gouv Adress by type:
+>> Displays all the addresses find for the given *adress* of the give *type*.
+See address types at the end of the section "/search/" of this link:
+[Types list](https://adresse.data.gouv.fr/api "Types list")
+>> #### Gouv Organisms:
+>> Displays all the organisms find for the given *departement number* of the give *type*.
+See organisms types in the section "organismes" of this link:
+[Types list](https://api.gouv.fr/api/api_etablissements_publics.html "Types list")
+> ### Movie:
+> The movie service allows you to access information of movies, like their plot or the year of released.
+>> #### Movie data:
+>> Displays informations about the movie (plot, direcotr, actors ...).
+>> #### Movie research:
+>> Displays all the movies find for the given *name*.
