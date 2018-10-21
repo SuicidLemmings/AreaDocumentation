@@ -61,12 +61,14 @@
 >> Displays all the addresses find for the given *adress* of the give *type*.
 >>
 >>See address types at the end of the section "/search/" of this link:
-[Types list](https://adresse.data.gouv.fr/api "Types list")
+>>
+>>[Types list](https://adresse.data.gouv.fr/api "Types list")
 >> #### Gouv Organisms:
 >> Displays all the organisms find for the given *departement number* of the give *type*.
 >>
 >>See organisms types in the section "organismes" of this link:
-[Types list](https://api.gouv.fr/api/api_etablissements_publics.html "Types list")
+>>
+>>[Types list](https://api.gouv.fr/api/api_etablissements_publics.html "Types list")
 > ### Movie:
 > The movie service allows you to access information of movies, like their plot or the year of released.
 >> #### Movie data:
