@@ -10,7 +10,7 @@
 - All requests that need an authentication **MUST** contain the JSONWebToken given at the authentication.(link) (See header authorization bearer token: [Bearer Token](https://swagger.io/docs/specification/authentication/bearer-authentication/)).
 
 ## Users:
-- ### Creation:
+- ## Creation:
 This request allow you to create an account. Next to the creation, an activation mail will be sent to your mail address to activate it.<br/><br/>**Url**: https://toadsterubuntu.ddns.me:8080/users/create<br/>**Type**: **POST**<br/>**Request**: There is two way to create an account. With our API or with Facebook.
 If you use our API, you will receive an activation mail after the creation of your account. Your account must be activated to use it.
 Our creation need to contain the following informations:
@@ -26,65 +26,59 @@ To create an account with facebook, you only need to register with it. Your acco
 		"message" : "Description of the status"
 		"data" : null
 See response section for the format.(link)
-- ### Activation:
+- ## Activation:
 To activate your account you need to click the link you received in the mail. If you didn t receive the mail or need another one, just sign up again with the same informations.
-- ### Authentication:
-Authentication token reminder: link.<br/>To authenticate tou our API with the classic method, you must send the followind request:<br/><br/>**Url**: https://toadsterubuntu.ddns.me:8080/users/auth<br/>**Type**: POST<br/>**Request**:
+- ## Authentication:
+Authentication token reminder: (link).<br/>To authenticate to our API with the classic method, you must send the followind request:<br/><br/>**Url**: https://toadsterubuntu.ddns.me:8080/users/auth<br/>**Type**: POST<br/>**Request**:
 		- "email" : "YourEmail@email.com"
 		- "password" : "YourPassword"
 **Response**: 
-                "status" : "success" if the authentication was successfull, "error" otherwise.
-                "message" : Description of the status.
+                "status" : "success" /* if the authentication was successfull */ "error" /* otherwise. */
+                "message" : "Description of the status."
                 "data" : {"token" : "azdsdqsdq.zadssdsqdqzdzq.dqsdsqdqzdz"}
-See response section format.(link)<br/>You must keep this token to authenticate your request. (link)<br/><br/>To authenticate with facebook you must first authenticate to facebook: https://developers.facebook.com/docs/facebook-login/web,
-            then send the following request:
-            url: https://toadsterubuntu.ddns.me:8080/users/auth
-            Type: POST
-            Request:
-                - "email" : "YourEmailGivedByFB"
-                - "token" : "TokenGivenByFB"
-                - "type" : "facebook"
-                - "id" : "IDGivenByFB"
-                - "username" : "UsernameGivenByFB"
-            Response:
-                See response section format.(link)
-                You must keep this token to authenticate your request. (link)
-                "status" : "success" if the authentication was successfull, "error" otherwise.
-                "message" : Description of the status.
-                "data" : {"token" : "azdsdqsdq.zadssdsqdqzdzq.dqsdsqdqzdz"}
+See response section format.(link)<br/>You must keep this token to authenticate your request. (link)<br/><br/>To authenticate with facebook you must first authenticate to facebook: https://developers.facebook.com/docs/facebook-login/web, then send the following request:<br/><br/>**Url**: https://toadsterubuntu.ddns.me:8080/users/auth<br/>**Type**: POST<br/>**Request**:
+		- "email" : "YourEmailGivedByFB"
+		- "token" : "TokenGivenByFB"
+		- "type" : "facebook"
+		- "id" : "IDGivenByFB"
+		- "username" : "UsernameGivenByFB"
+**Response**:
+		"status" : "success" /* if the authentication was successfull */ "error" /* otherwise. */
+		"message" : "Description of the status."
+		"data" : {"token" : "azdsdqsdq.zadssdsqdqzdzq.dqsdsqdqzdz"}
+See response section format.(link)<br/>You must keep this token to authenticate your request. (link)
+- ## Suppression:
 
-- ### Suppression:
-
-- ### Informations:
+- ## Informations:
 
 ------------
 
 ## Services:
-- ### Services availables:
+- ## Services availables:
 
-- ### Service description:
+- ## Service description:
 
 ------------
 
 
 ## Areas:
-- ### Add an AREA:
+- ## Add an AREA:
 
-- ### Update an AREA:
+- ## Update an AREA:
 
-- ### Delete an AREA:
+- ## Delete an AREA:
 
-- ### AREAS informations for the user:
+- ## AREAS informations for the user:
 
-- ### AREA info by ID:
+- ## AREA info by ID:
 
 ------------
 
 
 ## General:
-- ### Reponse format:
+- ## Reponse format:
 
-- ### About.json:
+- ## About.json:
 
 ------------
 
