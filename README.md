@@ -1,6 +1,6 @@
 # **AREA** ![](logo)
 ## Introduction:
-- The following documentation allow you to access the informations needed to use our API named **AREA.** This informations will show you how to request our API. This API is used to allow users to configure actions and reactions (link) for a group of given **services** (link). To configure these actions and reactions you will need to **authenticate** (link) to our API and use differents types of request. Please, read the next documentation before you start.
+- The following documentation allow you to access the informations needed to use our API named **AREA.** This informations will show you how to request our API. This API is used to allow users to configure actions and reactions (link) for a group of given **services** (link). To configure these actions and reactions you will need to **authenticate** (link) to our API and use differents types of request.<br/> Please, read the next documentation before you start.
 **Use case :**
 >Mr X  want to be informed when it s raining at his home. To do this, he will configure a reaction (cf). To configure this action / reaction, the user will need to be authenticated to our API and to the mail service(link) (to receive a mail on his account).
 
@@ -13,8 +13,8 @@
 ## Users:
 - ### Creation:
 This request allow you to create an account. Next to the creation, an activation mail will be sent to your mail address to activate it.<br/>
-**Url**: https://toadsterubuntu.ddns.me:8080/users/create
-**Type**: **POST**
+**Url**: https://toadsterubuntu.ddns.me:8080/users/create<br/>
+**Type**: **POST**<br/>
 **Request**: There is two way to create an account. With our API or with Facebook.
 If you use our API, you will receive an activation mail after the creation of your account. Your account must be activated to use it.
 Our creation need to contain the following informations:
@@ -24,7 +24,7 @@ Our creation need to contain the following informations:
 		"lastname" : "YourLastName"
 		"email" : "YourEmail@email.com"
 		"password" : "YourPassword"
-To create an account with facebook, you only need to register with it. Your account will be created if it hasn t already.
+To create an account with facebook, you only need to register with it. Your account will be created if it hasn t already.<br/>
 See Authentication (link).<br/>
 **Response**: See response section for the format.(link)
 
