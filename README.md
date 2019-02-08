@@ -1,4 +1,4 @@
-<p style="text-align: center;"> **AREA** ![](logo) </p>
+<p style="text-align: center;"> **AREA**</p> ![](logo)
 ## Introduction:
 - The following documentation allow you to access the informations needed to use our API named **AREA.** This informations will show you how to request our API. This API is used to allow users to configure actions and reactions (link) for a group of given **services** (link). To configure these actions and reactions you will need to **authenticate** (link) to our API and use differents types of request.<br/> Please, read the next documentation before you start.
 **Use case :**
