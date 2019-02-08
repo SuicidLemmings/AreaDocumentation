@@ -1,7 +1,6 @@
 # **AREA** ![](logo)
 ## Introduction:
-- The following documentation allow you to access the informations needed to use our API named **AREA.** This informations will show you how to request our API. This API is used to allow users to configure actions and reactions (link) for a group of given **services** (link). To configure these actions and reactions you will need to **authenticate** (link) to our API and use differents types of request.<br/> Please, read the next documentation before you start.
-**Use case :**
+- The following documentation allow you to access the informations needed to use our API named **AREA.** This informations will show you how to request our API. This API is used to allow users to configure actions and reactions (link) for a group of given **services** (link). To configure these actions and reactions you will need to **authenticate** (link) to our API and use differents types of request.<br/> Please, read the next documentation before you start.<br/>**Use case :**
 >Mr X  want to be informed when it s raining at his home. To do this, he will configure a reaction (cf). To configure this action / reaction, the user will need to be authenticated to our API and to the mail service(link) (to receive a mail on his account).
 
 - In the following parts you will see how to use our API, and features that you have too implement.
@@ -26,10 +25,9 @@ To create an account with facebook, you only need to register with it. Your acco
 		"status" : "success" /* if the creation was successfull */ "warning" /* if the email is already taken */ "error" /* otherwise */
 		"message" : "Description of the status"
 		"data" : null
-See response section for the format.(link)<br/>
+See response section for the format.(link)
 - ### Activation:
-To activate your account you need to click the link you received in the mail. If you didn t receive the mail or need another one, just sign up again with the same informations.<br/>
-
+To activate your account you need to click the link you received in the mail. If you didn t receive the mail or need another one, just sign up again with the same informations.
 - ### Authentication:
 Authentication token reminder: link.<br/>To authenticate tou our API with the classic method, you must send the followind request:<br/><br/>**Url**: https://toadsterubuntu.ddns.me:8080/users/auth<br/>**Type**: POST<br/>**Request**:
 		- "email" : "YourEmail@email.com"
