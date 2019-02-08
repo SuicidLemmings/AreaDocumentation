@@ -33,9 +33,9 @@ Authentication token reminder: (link).<br/>To authenticate to our API with the c
 		- "email" : "YourEmail@email.com"
 		- "password" : "YourPassword"
 **Response**: 
-                "status" : "success" /* if the authentication was successfull */ "error" /* otherwise. */
-                "message" : "Description of the status."
-                "data" : {"token" : "azdsdqsdq.zadssdsqdqzdzq.dqsdsqdqzdz"}
+		"status" : "success" /* if the authentication was successfull */ "error" /* otherwise. */
+		"message" : "Description of the status."
+		"data" : {"token" : "azdsdqsdq.zadssdsqdqzdzq.dqsdsqdqzdz"}
 See response section format.(link)<br/>You must keep this token to authenticate your request. (link)<br/><br/>To authenticate with facebook you must first authenticate to facebook: https://developers.facebook.com/docs/facebook-login/web, then send the following request:<br/><br/>**Url**: https://toadsterubuntu.ddns.me:8080/users/auth<br/>**Type**: POST<br/>**Request**:
 		- "email" : "YourEmailGivedByFB"
 		- "token" : "TokenGivenByFB"
@@ -59,10 +59,10 @@ See response section format.(link)
 Request send to get information about an user. Must be auth.(link)<br/><br/>**Url**: https://toadsterubuntu.ddns.me:8080/users/<br/>**Type**: GET<br/>**Request**:
 		null
 **Response**:
-                "status" : "success" /* if the request was successfull */ "error" /* otherwise. */
-                "message" : "Description of the status."
-                - Classic: "data" : {"email" : "YourEmail", "lastname" : "YourLastName", "firstname" : "YourFirstname", "accountType" : "classic"}
-                - Facebook: "data" : {"email" : "YourFBEmail", "username" : "FBUsername", "accountType" : "facebook"}
+		"status" : "success" /* if the request was successfull */ "error" /* otherwise. */
+		"message" : "Description of the status."
+		- Classic: "data" : {"email" : "YourEmail", "lastname" : "YourLastName", "firstname" : "YourFirstname", "accountType" : "classic"}
+		- Facebook: "data" : {"email" : "YourFBEmail", "username" : "FBUsername", "accountType" : "facebook"}
 See response section format.(link)<br/>Users informations.
 
 ------------
