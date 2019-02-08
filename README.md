@@ -21,15 +21,39 @@ Our creation need to contain the following informations:
 		"lastname" : "YourLastName"
 		"email" : "YourEmail@email.com"
 		"password" : "YourPassword"
-To create an account with facebook, you only need to register with it. Your account will be created if it hasn t already.<br/>See Authentication (link).<br/><br/>**Response**: See response section for the format.(link)
+To create an account with facebook, you only need to register with it. Your account will be created if it hasn t already.<br/>See Authentication (link).<br/><br/>**Response**: 
 
 		"status" : "success" /* if the creation was successfull */ "warning" /* if the email is already taken */ "error" /* otherwise */
 		"message" : "Description of the status"
 		"data" : null
-
+See response section for the format.(link)
 - ### Activation:
+To activate your account you need to click the link you received in the mail. If you didn t receive the mail or need another one, just sign up again with the same informations.
 
 - ### Authentication:
+Authentication token reminder: link.<br/>To authenticate tou our API with the classic method, you must send the followind request:<br/><br/>**Url**: https://toadsterubuntu.ddns.me:8080/users/auth<br/>**Type**: POST<br/>**Request**:
+		- "email" : "YourEmail@email.com"
+		- "password" : "YourPassword"
+**Response**: 
+                "status" : "success" if the authentication was successfull, "error" otherwise.
+                "message" : Description of the status.
+                "data" : {"token" : "azdsdqsdq.zadssdsqdqzdzq.dqsdsqdqzdz"}
+See response section format.(link)<br/>You must keep this token to authenticate your request. (link)<br/><br/>To authenticate with facebook you must first authenticate to facebook: https://developers.facebook.com/docs/facebook-login/web,
+            then send the following request:
+            url: https://toadsterubuntu.ddns.me:8080/users/auth
+            Type: POST
+            Request:
+                - "email" : "YourEmailGivedByFB"
+                - "token" : "TokenGivenByFB"
+                - "type" : "facebook"
+                - "id" : "IDGivenByFB"
+                - "username" : "UsernameGivenByFB"
+            Response:
+                See response section format.(link)
+                You must keep this token to authenticate your request. (link)
+                "status" : "success" if the authentication was successfull, "error" otherwise.
+                "message" : Description of the status.
+                "data" : {"token" : "azdsdqsdq.zadssdsqdqzdzq.dqsdsqdqzdz"}
 
 - ### Suppression:
 
