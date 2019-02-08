@@ -48,8 +48,22 @@ See response section format.(link)<br/>You must keep this token to authenticate 
 		"data" : {"token" : "azdsdqsdq.zadssdsqdqzdzq.dqsdsqdqzdz"}
 See response section format.(link)<br/>You must keep this token to authenticate your request. (link)
 - ## Suppression:
-
+Request send to delete an user. Must be auth.(link)<br/><br/>**Url**: https://toadsterubuntu.ddns.me:8080/users/delete<br/>**Type**: DEL<br/>**Request**:
+		null
+**Response**:
+		"status" : "success" /* if the supression was successfull */ "error" /* otherwise. */
+		"message" : "Description of the status."
+		"data" : null
+See response section format.(link)
 - ## Informations:
+Request send to get information about an user. Must be auth.(link)<br/><br/>**Url**: https://toadsterubuntu.ddns.me:8080/users/<br/>**Type**: GET<br/>**Request**:
+		null
+**Response**:
+                "status" : "success" /* if the request was successfull */ "error" /* otherwise. */
+                "message" : "Description of the status."
+                - Classic: "data" : {"email" : "YourEmail", "lastname" : "YourLastName", "firstname" : "YourFirstname", "accountType" : "classic"}
+                - Facebook: "data" : {"email" : "YourFBEmail", "username" : "FBUsername", "accountType" : "facebook"}
+See response section format.(link)<br/>Users informations.
 
 ------------
 
