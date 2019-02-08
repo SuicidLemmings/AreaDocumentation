@@ -12,10 +12,7 @@
 
 ## Users:
 - ### Creation:
-This request allow you to create an account. Next to the creation, an activation mail will be sent to your mail address to activate it.<br/>
-**Url**: https://toadsterubuntu.ddns.me:8080/users/create<br/>
-**Type**: **POST**<br/>
-**Request**: There is two way to create an account. With our API or with Facebook.
+This request allow you to create an account. Next to the creation, an activation mail will be sent to your mail address to activate it.<br/><br/>**Url**: https://toadsterubuntu.ddns.me:8080/users/create<br/>**Type**: **POST**<br/>**Request**: There is two way to create an account. With our API or with Facebook.
 If you use our API, you will receive an activation mail after the creation of your account. Your account must be activated to use it.
 Our creation need to contain the following informations:
 
@@ -24,9 +21,7 @@ Our creation need to contain the following informations:
 		"lastname" : "YourLastName"
 		"email" : "YourEmail@email.com"
 		"password" : "YourPassword"
-To create an account with facebook, you only need to register with it. Your account will be created if it hasn t already.<br/>
-See Authentication (link).<br/>
-**Response**: See response section for the format.(link)
+To create an account with facebook, you only need to register with it. Your account will be created if it hasn t already.<br/>See Authentication (link).<br/><br/>**Response**: See response section for the format.(link)
 
 		"status" : "success" /* if the creation was successfull */ "warning" /* if the email is already taken */ "error" /* otherwise */
 		"message" : "Description of the status"
