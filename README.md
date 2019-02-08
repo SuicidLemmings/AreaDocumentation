@@ -26,9 +26,9 @@ To create an account with facebook, you only need to register with it. Your acco
 		"status" : "success" /* if the creation was successfull */ "warning" /* if the email is already taken */ "error" /* otherwise */
 		"message" : "Description of the status"
 		"data" : null
-See response section for the format.(link)
+See response section for the format.(link)<br/>
 - ### Activation:
-To activate your account you need to click the link you received in the mail. If you didn t receive the mail or need another one, just sign up again with the same informations.
+To activate your account you need to click the link you received in the mail. If you didn t receive the mail or need another one, just sign up again with the same informations.<br/>
 
 - ### Authentication:
 Authentication token reminder: link.<br/>To authenticate tou our API with the classic method, you must send the followind request:<br/><br/>**Url**: https://toadsterubuntu.ddns.me:8080/users/auth<br/>**Type**: POST<br/>**Request**:
