@@ -106,8 +106,8 @@ See response section format.(link)<br/>Users informations.
 
 
 ## Credits:
->This project has been made by Charles Descoust, Charles Aubert, Simon Gourlet and bastien Lécussan.
-Feel free to contact us if you have feedback feedback at: area.epitech.toulouse@gmail.com
+>This project has been made by Charles Descoust, Charles Aubert, Simon Gourlet and Bastien Lécussan.
+Feel free to contact us if you have some feedback at: area.epitech.toulouse@gmail.com
 
 ------------
 
