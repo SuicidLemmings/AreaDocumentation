@@ -7,6 +7,8 @@
 - In the following parts you will see how to use our API, and features that you have too implement.
 
 ## Important:
+- All Requests **MUST BE** JSON formatted (only format supported).
+- All requests that need an authentication **MUST** contain the JSONWebToken given at the authentication.(link) (See header authorization bearer token: [Bearer Token](https://swagger.io/docs/specification/authentication/bearer-authentication/)).
 ## Users:
 ## Services:
 ## Areas:
