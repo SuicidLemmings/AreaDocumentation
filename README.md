@@ -218,7 +218,7 @@ See response section format: [response](#Response)
 
 
 ## <a name="General"></a> General:
-- ## <a name="GeneralResponse"></a> Reponse format:
+- ## <a name="Response"></a> Reponse format:
 A request will have only one format of response. This response will always be in JSON.<br/>A response always contains three elements:
 
 		{
@@ -227,7 +227,7 @@ A request will have only one format of response. This response will always be in
 		"data" : "Contains additional data in result of the request."
 		}
 
-- ## <a name="GeneralAbout.json"></a> About.json:
+- ## <a name="About.json"></a> About.json:
 The API answer a request about.json which allow an application to access general informations about our API.<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/about.json<br/>**Type**: GET<br/>**Request**:
 
 		null
