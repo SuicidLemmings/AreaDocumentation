@@ -7,7 +7,7 @@
 
 ## Important:
 - All Requests **MUST BE** JSON formatted (only format supported).
-- All requests that need an authentication **MUST** contain the JSONWebToken given at the authentication.(link) (See header authorization bearer token: [Bearer Token](https://swagger.io/docs/specification/authentication/bearer-authentication/)).
+- All requests that need an authentication **MUST** contain the JSONWebToken given at the [authentication](#Authentication). (See header authorization bearer token: [Bearer Token](https://swagger.io/docs/specification/authentication/bearer-authentication/)).
 
 ## Users:
 - ## Creation:
@@ -32,7 +32,7 @@ To create an account with facebook, you only need to register with it. Your acco
 See response section for the format.(link)
 - ## Activation:
 To activate your account you need to click the link you received in the mail. If you didn t receive the mail or need another one, just sign up again with the same informations.
-- ## Authentication:
+- ## <a name="Authentication"></a>Authentication:
 Authentication token reminder: (link).<br/>To authenticate to our API with the classic method, you must send the followind request:<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/users/auth<br/>**Type**: POST<br/>**Request**:
 
 		{
