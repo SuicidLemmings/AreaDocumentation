@@ -174,18 +174,100 @@ Request send to update an area. Must be auth. (link)<br/><br/>**URL**: https://t
 See response section format.(link)
 
 - ## Delete an AREA:
+Request send to delete an area. Must be auth. (link)<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/areas<br/>**Type**: DEL<br/>**Request**:
+
+		{
+		"_id" : "Id of the area to delete"
+		}
+**Response**:
+
+		{
+		"status" : "success" /* if the Area was deleted successfully */ "error" /* otherwise. */
+		"message" : "Description of the status."
+		"data" : null
+		}
+See response section format.(link)
 
 - ## AREAS informations for the user:
+Request send to get informations on areas of the user. Must be auth. (link)<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/areas<br/>**Type**: GET<br/>**Request**:
+
+		null
+**Response**:
+
+		{
+		"status" : "success" /* if the request was successfull */ "error" /* otherwise. */
+		"message" : "Description of the status."
+		"data" : { TODOAREA }
+		}
+See response section format.(link)
 
 - ## AREA info by ID:
+Request send to get informations of an area of the user. Must be auth. (link)<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/areas/IdOfTheArea<br/>**Type**: GET<br/>**Request**:
+
+		null
+**Response**:
+
+		{
+		"status" : "success" /* if the request was successfull */ "error" /* otherwise. */
+		"message" : "Description of the status."
+		"data" : { TODOAREA }
+		}
+See response section format.(link)
 
 ------------
 
 
 ## General:
 - ## Reponse format:
+A request will have only one format of response. This response will always be in JSON.<br/>A response always contains three elements:
+
+		{
+		"status" : "success" | "error" | "warning".
+		"message" : "A description of the request result".
+		"data" : "Contains additional data in result of the request."
+		}
 
 - ## About.json:
+The API answer a request about.json which allow an application to access general informations about our API.<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/about.json<br/>**Type**: GET<br/>**Request**:
+
+		null
+**Response**:
+
+		TODOAREA
+		{
+		"status" : "success" /* if the request was successfull */ "error" /* otherwise. */
+		"message" : "Description of the status."
+		"data" : {
+			"client ": 
+				{"host":  "10.101.53.35"},
+			"server ": {
+				"current_time ":  1531680780 ,
+				"services ":  [{
+					"name": "facebook",
+					"actions ": [{
+						"name": "new_message_in_group",
+						"description ": "A new  message  is  posted  in the  group"},
+						{"name": "new_message_inbox",
+						"description ": "A new  private  message  is  received  by the  user"},
+						{"name": "new_like",
+						"description ": "The  user  gains a like  from  one of their  messages"}],
+					"reactions ": [{
+						"name": "like_message",
+						"description ": "The  user  likes a message"}]},
+					{"name": "intra",
+					"actions ": [{
+						"name": "new_project_subscription",
+						"description ": "The  user  signs  up for a project"}],
+					"reactions ": [{
+						"name": "activity_subscribe",
+						"description ": "The  user  signs  up for an  activity"},
+						{"name": "module_subscribe",
+						"description ": "The  user  signs  up for a unit"}]
+				}]
+			}
+		}
+		}
+See response section format.(link)
 
 ------------
 
