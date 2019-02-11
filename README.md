@@ -1,4 +1,4 @@
-# **AREA**<img src="https://github.com/Charliebegood/FileStorage/blob/master/images/area.png" alt="AREA Logo" width="100"/>
+# <img src="https://github.com/Charliebegood/FileStorage/blob/master/images/area.png" alt="AREA Logo" width="100"/> **AREA**
 ## Introduction:
 - The following documentation allow you to access the informations needed to use our API named **AREA.** This informations will show you how to request our API. This API is used to allow users to configure [actions and reactions](#AREA) for a group of given [services](#Services). To configure these actions and reactions you will need to [authenticate](#UsersAuthentication) to our API and use differents types of request.<br/> Please, read the next documentation before you start.<br/><br/>**Use case :**
 >Mr X  want to be informed when it s raining at his home. To do this, he will configure a reaction (cf). To configure this action / reaction, the user will need to be authenticated to our API and to the mail service(link) (to receive a mail on his account).
