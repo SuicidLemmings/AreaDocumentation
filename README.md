@@ -9,6 +9,26 @@
 - All Requests **MUST BE** JSON formatted (only format supported).
 - <a name="JSONWebToken"></a>All requests that need an authentication **MUST** contain the JSONWebToken given at the [authentication](#UsersAuthentication). (See header authorization bearer token: [Bearer Token](https://swagger.io/docs/specification/authentication/bearer-authentication/)).
 
+## Summary
+- [Users](#Users)
+	- [Creation](#UsersCreation)
+	- [Activation](#UsersActivation)
+	- [Authentication](#UsersAuthentiation)
+	- [Suppression](#UsersSuppression)
+	- [User s informations](UsersInformations)
+- [Services](#Services)
+	- [Services available](#ServicesAvailables)
+	- [Service by ID](#ServiceDescription)
+- [AREA](#AREA)
+	- [Add](#AREAdd)
+	- [Delete](#AREASuppression)
+	- [Update](#AREAUpdate)
+	- [User s AREA informations](#AREAInformations)
+	- [User s AREA informations by ID](#AreaInfoByID)
+- [General](#General)
+	- [Response](#Response)
+	- [About.json](#About.json)
+
 ## <a name="Users"></a>Users:
 - ## <a name="UsersCreation"></a> Creation:
 This request allow you to create an account. Next to the creation, an activation mail will be sent to your mail address to activate it.<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/users/create<br/>**Type**: **POST**<br/>**Request**: There is two way to create an account. With our API or with Facebook.
