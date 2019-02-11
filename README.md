@@ -94,8 +94,10 @@ See response section format.(link)<br/>Users informations.
 ## Services:
 - ## Services availables:
 Request send to get informations about all the services.<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/services/<br/>**Type**: GET<br/>**Request**:
+
 		null
 **Response**:
+
 		{
 		"status" : "success" /* if the request was successfull */ "error" /* otherwise. */,
 		"message" : "Description of the status.",
@@ -109,8 +111,10 @@ Request send to get informations about all the services.<br/><br/>**URL**: https
 See response section format.(link)<br/>Services informations.
 - ## Service description:
 Request send to get informations about one specific service.<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/services/idOfTheService<br/>**Type**: GET<br/>**Request**:
+
 		null
 **Response**:
+
 		{
 		"status" : "success" if the request was successfull, "error" otherwise.
 		"message" : Description of the status.
@@ -130,6 +134,7 @@ See response section format.(link)<br/>Service informations.
 ## Areas:
 - ## Add an AREA:
 Request send to add an area. You may assign one or further reactions for only one action. Must be auth (link)<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/areas<br/>**Type**: POST<br/>**Request**:
+
 		{
 		"action" : { "service_id" : "The service id",
 				"_id" : "Id of the action",
@@ -139,6 +144,7 @@ Request send to add an area. You may assign one or further reactions for only on
 				"data" : [ "Data needed by the reaction described in the service request (link)" ] }, ...]
 		}
 **Response**:
+
 		{
 		"status" : "success" /* if the Area was added successfully */ "error" /* otherwise. */
 		"message" : "Description of the status."
@@ -148,6 +154,7 @@ See response section format.(link)
 
 - ## Update an AREA:
 Request send to update an area. Must be auth. (link)<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/areas<br/>**Type**: PUT<br/>**Request**:
+
 		{
 		"_id" : "Id of the area to update"
 		"action" : { "service_id" : "The service id",
@@ -158,6 +165,7 @@ Request send to update an area. Must be auth. (link)<br/><br/>**URL**: https://t
 				"data" : [ "Data needed by the reaction described in the service request (link)" ] }, ...]
 		}
 **Response**:
+
 		{
 		"status" : "success" /* if the Area was updated successfully */ "error" /* otherwise. */
 		"message" : "Description of the status."
