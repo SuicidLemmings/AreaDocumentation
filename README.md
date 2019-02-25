@@ -31,7 +31,7 @@
 
 ## <a name="Users"></a>Users:
 - ## <a name="UsersCreation"></a> Creation:
-This request allow you to create an account. Next to the creation, an activation mail will be sent to your mail address to activate it.<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/users/create<br/>**Type**: **POST**<br/>**Request**: There is two way to create an account. With our API or with Facebook.
+This request allow you to create an account. Next to the creation, an activation mail will be sent to your mail address to activate it.<br/><br/>**URL**: https://toadsterubuntu.ddns.me/users/create<br/>**Type**: **POST**<br/>**Request**: There is two way to create an account. With our API or with Facebook.
 If you use our API, you will receive an activation mail after the creation of your account. Your account must be activated to use it.
 Our creation need to contain the following informations:
 
@@ -53,7 +53,7 @@ See response section for the format: [response](#Response)
 - ## <a name="UsersActivation"></a> Activation:
 To activate your account you need to click the link you received in the mail. If you didn t receive the mail or need another one, just sign up again with the same informations.
 - ## <a name="UsersAuthentication"></a>Authentication:
-Authentication token reminder: [JSONWebToken](#JSONWebToken).<br/>To authenticate to our API with the classic method, you must send the followind request:<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/users/auth<br/>**Type**: POST<br/>**Request**:
+Authentication token reminder: [JSONWebToken](#JSONWebToken).<br/>To authenticate to our API with the classic method, you must send the followind request:<br/><br/>**URL**: https://toadsterubuntu.ddns.me/users/auth<br/>**Type**: POST<br/>**Request**:
 
 		{
 		"email" : "YourEmail@email.com",
@@ -66,7 +66,7 @@ Authentication token reminder: [JSONWebToken](#JSONWebToken).<br/>To authenticat
 		"message" : "Description of the status.",
 		"data" : {"token" : "azdsdqsdq.zadssdsqdqzdzq.dqsdsqdqzdz"}
 		}
-See response section format: [response](#Response)<br/>You must keep this token to authenticate your request. ([JSONWebToken](#JSONWebToken))<br/><br/>To authenticate with facebook you must first authenticate to facebook: https://developers.facebook.com/docs/facebook-login/web, then send the following request:<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/users/auth<br/>**Type**: POST<br/>**Request**:
+See response section format: [response](#Response)<br/>You must keep this token to authenticate your request. ([JSONWebToken](#JSONWebToken))<br/><br/>To authenticate with facebook you must first authenticate to facebook: https://developers.facebook.com/docs/facebook-login/web, then send the following request:<br/><br/>**URL**: https://toadsterubuntu.ddns.me/users/auth<br/>**Type**: POST<br/>**Request**:
 
 		{
 		"email" : "YourEmailGivedByFB",
@@ -84,7 +84,7 @@ See response section format: [response](#Response)<br/>You must keep this token 
 		}
 See response section format: [response](#Response)<br/>You must keep this token to authenticate your request. ([JSONWebToken](#JSONWebToken))
 - ## <a name="UsersSuppression"></a> Suppression:
-Request send to delete an user. Must be [auth](#UsersAuthentication).<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/users/delete<br/>**Type**: DEL<br/>**Request**:
+Request send to delete an user. Must be [auth](#UsersAuthentication).<br/><br/>**URL**: https://toadsterubuntu.ddns.me/users/delete<br/>**Type**: DEL<br/>**Request**:
 
 		null
 **Response**:
@@ -96,7 +96,7 @@ Request send to delete an user. Must be [auth](#UsersAuthentication).<br/><br/>*
 		}
 See response section format: [response](#Response)
 - ## <a name="UsersInformations"></a> Informations:
-Request send to get information about an user. Must be [auth](#UsersAuthentication).<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/users/<br/>**Type**: GET<br/>**Request**:
+Request send to get information about an user. Must be [auth](#UsersAuthentication).<br/><br/>**URL**: https://toadsterubuntu.ddns.me/users/<br/>**Type**: GET<br/>**Request**:
 
 		null
 **Response**:
@@ -113,7 +113,7 @@ See response section format: [response](#Response)<br/>Users informations.
 
 ## <a name="Services"></a> Services:
 - ## <a name="ServicesAvailables"></a> Services availables:
-Request send to get informations about all the services.<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/services/<br/>**Type**: GET<br/>**Request**:
+Request send to get informations about all the services.<br/><br/>**URL**: https://toadsterubuntu.ddns.me/services/<br/>**Type**: GET<br/>**Request**:
 
 		null
 **Response**:
@@ -130,7 +130,7 @@ Request send to get informations about all the services.<br/><br/>**URL**: https
 		}
 See response section format: [response](#Response)<br/>Services informations.
 - ## <a name="ServiceDescription"></a> Service description:
-Request send to get informations about one specific service.<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/services/idOfTheService<br/>**Type**: GET<br/>**Request**:
+Request send to get informations about one specific service.<br/><br/>**URL**: https://toadsterubuntu.ddns.me/services/idOfTheService<br/>**Type**: GET<br/>**Request**:
 
 		null
 **Response**:
@@ -158,7 +158,7 @@ See response section format: [response](#Response)<br/>Service informations.
 
 ## <a name="AREA"></a> Areas:
 - ## <a name="AREAAdd"></a> Add an AREA:
-Request send to add an area. You may assign one or further reactions for only one action. Must be [auth](#UsersAuthentication).<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/areas<br/>**Type**: POST<br/>**Request**:
+Request send to add an area. You may assign one or further reactions for only one action. Must be [auth](#UsersAuthentication).<br/><br/>**URL**: https://toadsterubuntu.ddns.me/areas<br/>**Type**: POST<br/>**Request**:
 
 		{
 		"action" : { "service_id" : "The service id",
@@ -178,7 +178,7 @@ Request send to add an area. You may assign one or further reactions for only on
 See response section format: [response](#Response)
 
 - ## <a name="AREAUpdate"></a> Update an AREA:
-Request send to update an area. Must be [auth](#Response).<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/areas<br/>**Type**: PUT<br/>**Request**:
+Request send to update an area. Must be [auth](#Response).<br/><br/>**URL**: https://toadsterubuntu.ddns.me/areas<br/>**Type**: PUT<br/>**Request**:
 
 		{
 		"_id" : "Id of the area to update"
@@ -199,7 +199,7 @@ Request send to update an area. Must be [auth](#Response).<br/><br/>**URL**: htt
 See response section format: [response](#Response)
 
 - ## <a name="AREASuppression"></a> Delete an AREA:
-Request send to delete an area. Must be [auth](#UsersAuthentication).<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/areas<br/>**Type**: DEL<br/>**Request**:
+Request send to delete an area. Must be [auth](#UsersAuthentication).<br/><br/>**URL**: https://toadsterubuntu.ddns.me/areas<br/>**Type**: DEL<br/>**Request**:
 
 		{
 		"_id" : "Id of the area to delete"
@@ -214,7 +214,7 @@ Request send to delete an area. Must be [auth](#UsersAuthentication).<br/><br/>*
 See response section format: [response](#Response)
 
 - ## <a name="AREAInformations"></a> AREAS informations for the user:
-Request send to get informations on areas of the user. Must be [auth](#UsersAuthentication).<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/areas<br/>**Type**: GET<br/>**Request**:
+Request send to get informations on areas of the user. Must be [auth](#UsersAuthentication).<br/><br/>**URL**: https://toadsterubuntu.ddns.me/areas<br/>**Type**: GET<br/>**Request**:
 
 		null
 **Response**:
@@ -243,7 +243,7 @@ Request send to get informations on areas of the user. Must be [auth](#UsersAuth
 See response section format: [response](#Response)
 
 - ## <a name="AREAInfoByID"></a> AREA info by ID:
-Request send to get informations of an area of the user. Must be [auth](#UsersAuthentication).<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/areas/IdOfTheArea<br/>**Type**: GET<br/>**Request**:
+Request send to get informations of an area of the user. Must be [auth](#UsersAuthentication).<br/><br/>**URL**: https://toadsterubuntu.ddns.me/areas/IdOfTheArea<br/>**Type**: GET<br/>**Request**:
 
 		null
 **Response**:
@@ -283,7 +283,7 @@ A request will have only one format of response. This response will always be in
 		}
 
 - ## <a name="About.json"></a> About.json:
-The API answer a request about.json which allow an application to access general informations about our API.<br/><br/>**URL**: https://toadsterubuntu.ddns.me:8080/about.json<br/>**Type**: GET<br/>**Request**:
+The API answer a request about.json which allow an application to access general informations about our API.<br/><br/>**URL**: https://toadsterubuntu.ddns.me/about.json<br/>**Type**: GET<br/>**Request**:
 
 		null
 **Response**:
