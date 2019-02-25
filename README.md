@@ -143,8 +143,13 @@ Request send to get informations about one specific service.<br/><br/>**URL**: h
 				"_id" : "Id of the service",
 				"icon_url" : "Url of the service icon",
 				"configured" : "true" | "false" (If the parameter is true, the service doesn't need connection),
-				"auth_url" : "Authentication url for the service if needed, none otherwise"
-				TODOAREA
+				"auth_url" : "Authentication url for the service if needed, none otherwise",
+				"actions" : [
+				], "reactions" : [
+					"_id" : "id of the reaction"
+					"name" : "name of the reaction"
+					"description" : "The description of the reaction"
+				]
 		}
 See response section format: [response](#Response)<br/>Service informations.
 
@@ -217,7 +222,23 @@ Request send to get informations on areas of the user. Must be [auth](#UsersAuth
 		{
 		"status" : "success" /* if the request was successfull */ "error" /* otherwise. */
 		"message" : "Description of the status."
-		"data" : { TODOAREA }
+		"data" : [
+			{
+				"_id" : "id de l'AREA",
+				"action" : {
+					"_id" : "id de l'action",
+					"description" : "The description of the action",
+					"service_id" : "The service id linked",
+					"data": [ /* Specific to each action. See the linked file for more informations. */ ]
+				},
+				"nb_reactions" : "number of total reactions (only one is showed)",
+				"reactions" : [{
+					"_id" : "id de la reaction",
+					"service_id" : "identifiant du service associé.",
+					"data" : [ /* Specific to each reaction. See the linked file for more informations. */ ]
+				}]
+			}
+		]
 		}
 See response section format: [response](#Response)
 
@@ -230,7 +251,21 @@ Request send to get informations of an area of the user. Must be [auth](#UsersAu
 		{
 		"status" : "success" /* if the request was successfull */ "error" /* otherwise. */
 		"message" : "Description of the status."
-		"data" : { TODOAREA }
+		"data" : {
+				"_id" : "id de l'AREA",
+				"action" : {
+					"_id" : "id de l'action",
+					"description" : "The description of the action",
+					"service_id" : "The service id linked",
+					"data": [ /* Specific to each action. See the linked file for more informations. */ ]
+				},
+				"nb_reactions" : "number of total reactions (only one is showed)",
+				"reactions" : [{
+					"_id" : "id de la reaction",
+					"service_id" : "identifiant du service associé.",
+					"data" : [ /* Specific to each reaction. See the linked file for more informations. */ ]
+				}]
+			}
 		}
 See response section format: [response](#Response)
 
@@ -253,13 +288,12 @@ The API answer a request about.json which allow an application to access general
 		null
 **Response**:
 
-		TODOAREA
 		{
 		"status" : "success" /* if the request was successfull */ "error" /* otherwise. */
 		"message" : "Description of the status."
 		"data" : {
 			"client ": 
-				{"host":  "10.101.53.35"},
+				{"host":  "toadsterubuntu.ddns.me"},
 			"server ": {
 				"current_time ":  1531680780 ,
 				"services ":  [{
@@ -274,15 +308,13 @@ The API answer a request about.json which allow an application to access general
 					"reactions ": [{
 						"name": "like_message",
 						"description ": "The  user  likes a message"}]},
-					{"name": "intra",
+					{"name": "gmail",
 					"actions ": [{
-						"name": "new_project_subscription",
-						"description ": "The  user  signs  up for a project"}],
+						"name": "new_mail",
+						"description ": "The  user received a mail"}],
 					"reactions ": [{
-						"name": "activity_subscribe",
-						"description ": "The  user  signs  up for an  activity"},
-						{"name": "module_subscribe",
-						"description ": "The  user  signs  up for a unit"}]
+						"name": "send_mail",
+						"description ": "The  user  send a maul"}
 				}]
 			}
 		}
